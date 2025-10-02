@@ -1,0 +1,6 @@
+# Netlify Configuration
+# Rule to handle clean URLs
+[[redirects]]
+  from = "/*"
+  to = "/:splat.html"
+  status = 200
