@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Vancouver Island – Birdie's 5 Star Activity Guide</title>
+    <meta name="description" content="Your guide to the best seasonal activities on Vancouver Island. Discover top summer and winter highlights near Mount Washington and Victoria, BC.">
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'sans': ['Lato', 'sans-serif'], 'serif': ['Playfair Display', 'serif'], },
+                    colors: { brand: { primary: '#1F3D2D' }, stone: { 50: '#F8F8F5', 100: '#f5f5f4' } }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-brand-primary font-sans antialiased">
+
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+    
+    <header class="sticky top-0 left-0 right-0 z-50 bg-stone-50 shadow-md">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="/" aria-label="Go to homepage">
+                <img src="https://Birdies5star.b-cdn.net/Birdies5Starlogo%20-%20Edited.png" alt="Birdie's 5 Star Logo" class="h-16">
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <ul class="flex items-center space-x-6">
+                    <li><a href="/" class="text-sm uppercase tracking-wider font-bold nav-link-underline text-gray-600 hover:text-brand-primary">Home</a></li>
+                    <li><a href="/#our-homes" class="text-sm uppercase tracking-wider font-bold nav-link-underline text-gray-600 hover:text-brand-primary">Our Homes</a></li>
+                    <li><a href="/explore" class="text-sm uppercase tracking-wider font-bold nav-link-underline text-brand-primary">Explore</a></li>
+                    <li><a href="/contact" class="text-sm uppercase tracking-wider font-bold nav-link-underline text-gray-600 hover:text-brand-primary">Contact</a></li>
+                </ul>
+                <a href="https://birdie5star.guestybookings.com/en/properties?minOccupancy=1" target="_blank" rel="noopener" class="ml-4 inline-block font-bold py-3 px-8 rounded-md transition-transform transform hover:scale-105 bg-brand-primary text-white hover:bg-opacity-90">Book Your Stay</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" aria-label="Open menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu-panel" class="fixed inset-0 bg-stone-50 z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+            <div class="flex justify-end p-6">
+                <button id="mobile-menu-close" aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <nav class="flex flex-col items-center justify-center h-full -mt-16">
+                <ul class="flex flex-col space-y-8 text-center">
+                    <li><a href="/" class="mobile-nav-link text-2xl font-serif text-gray-600">Home</a></li>
+                    <li><a href="/#our-homes" class="mobile-nav-link text-2xl font-serif text-gray-600">Our Homes</a></li>
+                    <li><a href="/explore" class="text-2xl font-serif text-brand-primary">Explore</a></li>
+                    <li><a href="/contact" class="mobile-nav-link text-2xl font-serif text-gray-600">Contact</a></li>
+                </ul>
+                <a href="https://birdie5star.guestybookings.com/en/properties?minOccupancy=1" target="_blank" rel="noopener" class="mt-12 inline-block font-bold py-3 px-8 rounded-md transition-transform transform hover:scale-105 bg-brand-primary text-white hover:bg-opacity-90">Book Your Stay</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="relative flex items-center justify-center text-center text-white bg-gray-800 overflow-hidden h-[50vh]">
+            <div class="absolute inset-0 bg-cover" style="background-image: url('https://Birdies5star.b-cdn.net/Vancouver%20Island/ben-wicks-g2ballCSr9g-unsplash.jpg');"></div>
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 p-8 fade-in-up">
+                <h1 class="text-4xl sm:text-6xl font-serif mb-4">Explore Vancouver Island</h1>
+                <p class="max-w-3xl mx-auto text-lg sm:text-xl font-sans">Adventures from Mount Washington to Victoria, the capital city.</p>
+            </div>
+        </div>
+        
+        <section class="py-20 sm:py-24"><div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in-up">
+                <h2 class="text-3xl sm:text-4xl font-serif mb-6">Two Locations, Endless Adventures</h2>
+                <p class="text-lg">Vancouver Island is a year-round destination, offering a rare blend of mountains and city charm. From winter powder days to vibrant summer festivals, we've curated our favorite seasonal experiences to help you plan your perfect stay.</p>
+            </div>
+        </div></section>
+        
+        <section class="py-20 sm:py-24 bg-stone-100"><div class="container mx-auto px-6">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-up">
+                    <h3 class="text-3xl font-serif mb-8">The Mountain Experience</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-2xl font-serif mb-4">Top 5 Summer Highlights</h4>
+                            <div class="space-y-4">
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.mountwashington.ca/things-to-do/bike-park.html" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Lift-Accessed Mountain Biking</a><p class="text-sm text-gray-600">Experience the thrill of downhill biking at Mount Washington's renowned bike park.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://bcparks.ca/strathcona-park/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Hike in Strathcona Park</a><p class="text-sm text-gray-600">Discover pristine lakes and stunning vistas in BC's oldest provincial park.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://cumberland.ca/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Explore Cumberland Village</a><p class="text-sm text-gray-600">Visit the historic village known for its legendary biking trails and craft brewery.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.comoxvalleyrd.ca/parks-recreation/comox-valley-parks-trails/comox-lake-park" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Swim at Comox Lake</a><p class="text-sm text-gray-600">A popular spot for swimming, boating, and picnicking on a warm summer day.</p></div>
+                                <div class="pb-4 border-b-0"><a href="https://cvfm.ca/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Visit a Farmers' Market</a><p class="text-sm text-gray-600">Experience the local bounty with fresh produce and artisan goods in the Comox Valley.</p></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-serif mb-4 mt-8">Top 5 Winter Highlights</h4>
+                            <div class="space-y-4">
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.mountwashington.ca/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Alpine Skiing & Snowboarding</a><p class="text-sm text-gray-600">Hit the slopes at Mount Washington, known for its deep powder and ocean views.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.mountwashington.ca/things-to-do/nordic-skiing-snowshoeing.html" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Cross-Country Skiing</a><p class="text-sm text-gray-600">Explore 55km of groomed trails that wind through serene alpine forests.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.mountwashington.ca/things-to-do/nordic-skiing-snowshoeing.html" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Snowshoeing Adventures</a><p class="text-sm text-gray-600">Trek through a winter wonderland on a variety of marked trails for all skill levels.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.explorecomoxvalley.com/listings/fat-biking/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Fat Biking in the Snow</a><p class="text-sm text-gray-600">Try a unique winter sport on the snowy trails around Cumberland.</p></div>
+                                <div class="pb-4 border-b-0"><a href="#" class="font-bold hover:underline">Stargazing in the Alpine</a><p class="text-sm text-gray-600">On clear nights, the minimal light pollution offers breathtaking views of the stars.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 fade-in-up" style="transition-delay: 100ms;">
+                    <img src="https://Birdies5star.b-cdn.net/Mount%20Washington/view-of-the-resort-from.jpg" alt="View of Mount Washington resort village from the slopes." class="rounded-lg shadow-lg aspect-square object-cover" loading="lazy">
+                    <img src="https://Birdies5star.b-cdn.net/Mount%20Washington/bike-23.jpg" alt="Mountain biker on a forest trail near Cumberland." class="rounded-lg shadow-lg aspect-square object-cover" loading="lazy">
+                    <img src="https://Birdies5star.b-cdn.net/Mount%20Washington/29333_PowerPoint-2000px-2000x1000.webp" alt="Mount Washington covered in snow during winter." class="rounded-lg shadow-lg aspect-square object-cover" loading="lazy">
+                    <img src="https://Birdies5star.b-cdn.net/Mount%20Washington/download.jpeg" alt="A skier carving down a snowy slope at Mount Washington." class="rounded-lg shadow-lg aspect-square object-cover" loading="lazy">
+                </div>
+            </div>
+        </div></section>
+
+        <section class="py-20 sm:py-24"><div class="container mx-auto px-6">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div class="grid grid-cols-2 gap-4 fade-in-up order-1 md:order-none">
+                    <img src="https://Birdies5star.b-cdn.net/Victoria/s1180x560.jpg" alt="Victoria's Inner Harbour with boats and historic buildings." class="rounded-lg shadow-lg aspect-square object-cover" loading="lazy">
+                    <img src="https://Birdies5star.b-cdn.net/Victoria/butchart-gardens-victoria.jpg" alt="Colorful flowers blooming at Butchart Gardens." class="rounded-lg shadow-lg aspect-square object-cover" loading="lazy">
+                    <img src="https://Birdies5star.b-cdn.net/Victoria/Victoria-biking-4-of-1.jpg" alt="People cycling along a waterfront path in Victoria." class="rounded-lg shadow-lg aspect-square object-cover" loading="lazy">
+                     <img src="https://Birdies5star.b-cdn.net/Victoria/ECF77C84-FD9C-4586-A7A3-E94F0212CF8E-1-640x480.jpeg" alt="A quiet, charming street in a Victoria neighborhood." class="rounded-lg shadow-lg aspect-square object-cover" loading="lazy">
+                </div>
+                <div class="fade-in-up md:order-last" style="transition-delay: 100ms;">
+                    <h3 class="text-3xl font-serif mb-8">The Capital City Experience</h3>
+                    <div class="space-y-6">
+                       <div>
+                            <h4 class="text-2xl font-serif mb-4">Top 5 Summer Highlights</h4>
+                            <div class="space-y-4">
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.tourismvictoria.com/see-do/activities-adventures/neighbourhoods/inner-harbour" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Explore the Inner Harbour</a><p class="text-sm text-gray-600">The vibrant heart of the city, perfect for whale watching tours, street performers, and festivals.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.crd.bc.ca/parks-recreation-culture/parks-trails/crd-regional-parks/galloping-goose-regional-trail" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Cycle the Galloping Goose Trail</a><p class="text-sm text-gray-600">Rent bikes and explore this scenic trail that runs from Victoria into the countryside.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.butchartgardens.com/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Visit The Butchart Gardens</a><p class="text-sm text-gray-600">Experience the world-renowned floral displays, especially vibrant in the summer.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://gvha.ca/marinas-facilities/fishermans-wharf/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Discover Fisherman's Wharf</a><p class="text-sm text-gray-600">A unique marine destination with colourful float homes, fresh seafood, and friendly seals.</p></div>
+                                <div class="pb-4 border-b-0"><a href="https://www.saanich.ca/EN/main/parks-recreation-community/parks/parks-trails-amenities/pkols-mount-douglas-park.html" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Hike in Mount Douglas Park</a><p class="text-sm text-gray-600">Climb to the summit for a 360-degree view of the city, ocean, and islands.</p></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-serif mb-4 mt-8">Top 5 Winter Highlights</h4>
+                            <div class="space-y-4">
+                                <div class="pb-4 border-b border-stone-200"><a href="https://royalbcmuseum.bc.ca/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Visit the Royal BC Museum</a><p class="text-sm text-gray-600">Immerse yourself in the natural and human history of British Columbia, a perfect rainy day activity.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.butchartgardens.com/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Christmas at Butchart Gardens</a><p class="text-sm text-gray-600">Experience the Magic of Christmas with spectacular light displays and festive entertainment.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.tourismvictoria.com/see-do/activities-adventures/attractions/fan-tan-alley" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Wander Through Fan Tan Alley</a><p class="text-sm text-gray-600">Explore Canada's narrowest street in the heart of the country's oldest Chinatown.</p></div>
+                                <div class="pb-4 border-b border-stone-200"><a href="https://www.tourismvictoria.com/eat-drink/restaurants-cafes/afternoon-tea" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Enjoy Afternoon Tea</a><p class="text-sm text-gray-600">Indulge in a classic Victoria tradition at one of the city's many charming tea rooms.</p></div>
+                                <div class="pb-4 border-b-0"><a href="https://exploresidney.ca/" target="_blank" rel="noopener noreferrer" class="font-bold hover:underline">Discover Sidney-by-the-Sea</a><p class="text-sm text-gray-600">Explore the charming seaside town's unique bookstores and waterfront walkway.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></section>
+        
+        <section class="py-20 sm:py-24 bg-stone-100"><div class="container mx-auto px-6">
+             <div class="text-center bg-white p-12 rounded-lg shadow-lg fade-in-up">
+                <h2 class="text-3xl sm:text-4xl font-serif mb-4">Ready to Plan Your Adventure?</h2>
+                <p class="max-w-2xl mx-auto text-lg mb-8">Let us help you find the perfect home base for your island experience.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="/" class="inline-block font-bold py-3 px-8 rounded-md transition-transform transform hover:scale-105 bg-brand-primary text-white hover:bg-opacity-90">View Our Homes</a>
+                    <a href="/contact" class="inline-block font-bold py-3 px-8 rounded-md transition-transform transform hover:scale-105 bg-white text-brand-primary border border-brand-primary hover:bg-stone-100">Ask a Question</a>
+                </div>
+            </div>
+        </div></section>
+    </main>
+
+    <footer class="bg-brand-primary text-stone-50">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center md:text-left">
+                    <div class="flex justify-center md:justify-start mb-4">
+                        <img src="https://Birdies5star.b-cdn.net/Birdies5Starlogo%20-%20Edited.png" alt="Birdie's 5 Star Logo - Footer" class="h-16 brightness-0 invert">
+                    </div>
+                    <p class="text-sm text-stone-300">Experience Vancouver Island from one of our two family-owned homes. Five-star hospitality, hosted personally.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="font-serif text-xl mb-4">Quick Links</h3>
+                    <nav class="flex flex-col space-y-2">
+                        <a href="/" class="text-stone-300 hover:text-white transition">Home</a>
+                        <a href="/#our-homes" class="text-stone-300 hover:text-white transition">Our Homes</a>
+                        <a href="/explore" class="text-stone-300 hover:text-white transition">Explore</a>
+                        <a href="/contact" class="text-stone-300 hover:text-white transition">Contact</a>
+                    </nav>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="font-serif text-xl mb-4">Contact Us</h3>
+                    <a href="tel:250-719-6093" class="text-stone-300 hover:text-white transition">250-719-6093</a>
+                </div>
+            </div>
+            <div class="border-t border-stone-50/20 mt-12 pt-8 text-center text-sm text-stone-400">
+                <p>&copy; 2025 Birdie’s 5 Star. All rights reserved.</p>
+                <p class="text-xs mt-2">Website proudly created by <a href="https://www.fullyo.io" target="_blank" rel="noopener noreferrer" class="hover:underline">Fullyo</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- Mobile Menu ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            function openMenu() { mobileMenuPanel.classList.remove('translate-x-full'); }
+            function closeMenu() { mobileMenuPanel.classList.add('translate-x-full'); }
+            
+            if (mobileMenuButton) mobileMenuButton.addEventListener('click', openMenu);
+            if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMenu);
+            if (mobileNavLinks) mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+            // --- Scroll Animation ---
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            const targets = document.querySelectorAll('.fade-in-up');
+            targets.forEach(target => observer.observe(target));
+        });
+    </script>
+</body>
+</html>
