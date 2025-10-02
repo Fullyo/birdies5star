@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact & Booking – Birdie's 5 Star Vacation Rentals</title>
+    <meta name="description" content="Get in touch with Birdie's 5 Star to ask a question or book your stay at our Mount Washington or Victoria, BC vacation rental.">
+    
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'sans': ['Lato', 'sans-serif'], 'serif': ['Playfair Display', 'serif'], },
+                    colors: { brand: { primary: '#1F3D2D' }, stone: { 50: '#F8F8F5', 100: '#f5f5f4' } }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-brand-primary font-sans antialiased">
+
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+    
+    <header class="sticky top-0 left-0 right-0 z-50 bg-stone-50 shadow-md">
+        <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+            <a href="/" aria-label="Go to homepage">
+                <img src="https://Birdies5star.b-cdn.net/Birdies5Starlogo%20-%20Edited.png" alt="Birdie's 5 Star Logo" class="h-16">
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <ul class="flex items-center space-x-6">
+                    <li><a href="/" class="text-sm uppercase tracking-wider font-bold nav-link-underline text-gray-600 hover:text-brand-primary">Home</a></li>
+                    <li><a href="/#our-homes" class="text-sm uppercase tracking-wider font-bold nav-link-underline text-gray-600 hover:text-brand-primary">Our Homes</a></li>
+                    <li><a href="/explore" class="text-sm uppercase tracking-wider font-bold nav-link-underline text-gray-600 hover:text-brand-primary">Explore</a></li>
+                    <li><a href="/contact" class="text-sm uppercase tracking-wider font-bold nav-link-underline text-brand-primary">Contact</a></li>
+                </ul>
+                <a href="https://birdie5star.guestybookings.com/en/properties?minOccupancy=1" target="_blank" rel="noopener" class="ml-4 inline-block font-bold py-3 px-8 rounded-md transition-transform transform hover:scale-105 bg-brand-primary text-white hover:bg-opacity-90">Book Your Stay</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" aria-label="Open menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu-panel" class="fixed inset-0 bg-stone-50 z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+            <div class="flex justify-end p-6">
+                <button id="mobile-menu-close" aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <nav class="flex flex-col items-center justify-center h-full -mt-16">
+                <ul class="flex flex-col space-y-8 text-center">
+                    <li><a href="/" class="mobile-nav-link text-2xl font-serif text-gray-600">Home</a></li>
+                    <li><a href="/#our-homes" class="mobile-nav-link text-2xl font-serif text-gray-600">Our Homes</a></li>
+                    <li><a href="/explore" class="mobile-nav-link text-2xl font-serif text-gray-600">Explore</a></li>
+                    <li><a href="/contact" class="text-2xl font-serif text-brand-primary">Contact</a></li>
+                </ul>
+                <a href="https://birdie5star.guestybookings.com/en/properties?minOccupancy=1" target="_blank" rel="noopener" class="mt-12 inline-block font-bold py-3 px-8 rounded-md transition-transform transform hover:scale-105 bg-brand-primary text-white hover:bg-opacity-90">Book Your Stay</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="relative flex items-center justify-center text-center text-white bg-gray-800 overflow-hidden h-[50vh]">
+            <div class="absolute inset-0 bg-cover" style="background-image: url('https://Birdies5star.b-cdn.net/Vancouver%20Island/mathijs-deerenberg-MXsU9KDfCx8-unsplash.jpg');"></div>
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 p-8 fade-in-up">
+                <h1 class="text-4xl sm:text-6xl font-serif mb-4">Contact & Booking</h1>
+                <p class="max-w-3xl mx-auto text-lg sm:text-xl font-sans">Inquiries for Mount Washington Resort & Victoria</p>
+            </div>
+        </div>
+        
+        <section class="py-20 sm:py-24"><div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto fade-in-up">
+                 <h2 class="text-3xl sm:text-4xl font-serif mb-4">Let’s Get You Booked</h2>
+                 <p class="mb-8">If you have any questions before booking, feel free to reach out directly. We respond quickly and are happy to help.</p>
+            </div>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg fade-in-up">
+                <h3 class="text-2xl font-serif text-center mb-2">Send a Message</h3>
+                <p class="text-center text-sm text-gray-600 mb-6">Or call us at <a href="tel:250-719-6093" class="font-bold underline">250-719-6093</a></p>
+                <form name="contact" method="POST">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field"></label></p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border border-stone-200 rounded-md focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary/50 outline-none">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border border-stone-200 rounded-md focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary/50 outline-none">
+                    </div>
+                    <textarea name="message" placeholder="Your Message" rows="6" required class="w-full p-3 mb-6 border border-stone-200 rounded-md focus:ring-2 focus:ring-brand-primary/50 focus:border-brand-primary/50 outline-none"></textarea>
+                    <div class="text-center"><button type="submit" class="inline-block bg-brand-primary text-white font-bold py-3 px-8 rounded-md hover:bg-opacity-90 transition-transform transform hover:scale-105">Send Message</button></div>
+                </form>
+            </div>
+        </div></section>
+    </main>
+
+    <footer class="bg-brand-primary text-stone-50">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center md:text-left">
+                    <div class="flex justify-center md:justify-start mb-4">
+                        <img src="https://Birdies5star.b-cdn.net/Birdies5Starlogo%20-%20Edited.png" alt="Birdie's 5 Star Logo - Footer" class="h-16 brightness-0 invert">
+                    </div>
+                    <p class="text-sm text-stone-300">Experience Vancouver Island from one of our two family-owned homes. Five-star hospitality, hosted personally.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="font-serif text-xl mb-4">Quick Links</h3>
+                    <nav class="flex flex-col space-y-2">
+                        <a href="/" class="text-stone-300 hover:text-white transition">Home</a>
+                        <a href="/#our-homes" class="text-stone-300 hover:text-white transition">Our Homes</a>
+                        <a href="/explore" class="text-stone-300 hover:text-white transition">Explore</a>
+                        <a href="/contact" class="text-stone-300 hover:text-white transition">Contact</a>
+                    </nav>
+                </div>
+                <div class="text-center md:text-right">
+                    <h3 class="font-serif text-xl mb-4">Contact Us</h3>
+                    <a href="tel:250-719-6093" class="text-stone-300 hover:text-white transition">250-719-6093</a>
+                </div>
+            </div>
+            <div class="border-t border-stone-50/20 mt-12 pt-8 text-center text-sm text-stone-400">
+                <p>&copy; 2025 Birdie’s 5 Star. All rights reserved.</p>
+                <p class="text-xs mt-2">Website proudly created by <a href="https://www.fullyo.io" target="_blank" rel="noopener noreferrer" class="hover:underline">Fullyo</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- Mobile Menu ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+            const mobileMenuClose = document.getElementById('mobile-menu-close');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            function openMenu() { mobileMenuPanel.classList.remove('translate-x-full'); }
+            function closeMenu() { mobileMenuPanel.classList.add('translate-x-full'); }
+            
+            if (mobileMenuButton) mobileMenuButton.addEventListener('click', openMenu);
+            if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMenu);
+            if (mobileNavLinks) mobileNavLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+            // --- Scroll Animation ---
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            const targets = document.querySelectorAll('.fade-in-up');
+            targets.forEach(target => observer.observe(target));
+
+            // --- Contact Form ---
+            const contactForm = document.querySelector('form[name="contact"]:not([hidden])');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const formData = new FormData(contactForm);
+                    fetch("/", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                        body: new URLSearchParams(formData).toString()
+                    })
+                    .then(() => {
+                        const formContainer = contactForm.parentElement;
+                        formContainer.innerHTML = `
+                            <div class="text-center">
+                                <h3 class="text-2xl font-serif mb-4">Thank You!</h3>
+                                <p>Your message has been sent. We'll be in touch soon.</p>
+                            </div>`;
+                    })
+                    .catch(error => alert("Sorry, there was an error sending your message. Please try again."));
+                });
+            }
+        });
+    </script>
+</body>
+</html>
